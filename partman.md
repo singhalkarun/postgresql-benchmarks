@@ -107,6 +107,8 @@ EXPLAIN ANALYZE INSERT INTO teacher (id, school_id, name) VALUES (350001, 3567, 
 
 ## Now, let's try to see response times in scenario where we have partitioned it on the basis of school_id
 
+Note: You will have to use PostgreSQL with PgPartman Setup ([Dockerfile](https://gist.github.com/jgould22/3280fc0f531485f4fe19a2ef1ef67361))
+
 ```sql
 CREATE TABLE public.school (
 id serial,
