@@ -153,3 +153,7 @@ explain analyze select count(*) from assessment where submission_time between '2
 ```sql
 CREATE INDEX assessment_non_hypertable_submission_idx ON assessment_non_hypertable (submission_time)
 ```
+
+![image](https://github.com/singhalkarun/postgresql-benchmarks/assets/113603846/348af6a7-9656-498e-b167-9984dc237aa0)
+
+We see that Non-hypertable is performing better as of now, Let's try doubling the size of tables and see how it affects the result.
